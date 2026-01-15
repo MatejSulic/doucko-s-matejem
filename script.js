@@ -1,26 +1,26 @@
 // Konfigurace recenzí
 const reviews = [
     { 
-        name: "Lucka", 
-        age: 17, 
-        goal: "Maturita", 
-        text: "Matěj mi to vysvětlil líp než učitelka za rok. Doporučuju!", 
+        name: "Tereza Š.", 
+        age: 20, 
+        goal: "Maturitní zkouška z informatiky", 
+        text: "Doučování bylo pro mě velkým přínosem (odmaturovala jsem díky tomu). Matěj byl profesionální, ale zároveň to bylo ve velmi příjemné a přátelské atmosféře. Nic mě neučil na sílu a podle napsaných textů z googlu, ale vše mi vysvětlil jednoduše, s různými příklady, tak, abych to pochopila. Je velmi trpělivý, milý a přátelský. Doučování můžu jen doporučit, ať už se jedná o jednoduché zvládání základů nebo složitějších zadání. ", 
         stars: 5, 
         emoji: "👩‍🎓" 
     },
     { 
-        name: "Petr", 
-        age: 15, 
-        goal: "Základka", 
-        text: "Super přístup, všechno v klidu a bez stresu.", 
+        name: "Antonín Š.", 
+        age: 14, 
+        goal: "9. třída ZŠ, přijímačky", 
+        text: "Na tomto doučování se mi nejvíc líbí, že lektor nespěchá. I když se u jedné úlohy zaseknu třeba na 15 minut, snaží se mi ji trpělivě vysvětlit nejrůznějšími způsoby, dokud ji opravdu nepochopím. Zkrátka si myslím, že je tohle doučování výborné.", 
         stars: 5, 
         emoji: "🙋‍♂️" 
     },
     { 
-        name: "Jakub", 
-        age: 20, 
-        goal: "Vysoká škola", 
-        text: "Pomohl mi s matikou na ZČU, kterou jsem fakt nedával.", 
+        name: "Denis V.", 
+        age: 18, 
+        goal: "3. ročník SŠ přijímačky", 
+        text: "Za mě skvělý přístup a výborné znalosti. Matěj dokáže doučování pojmout tak, abych se rychle naučil co největší objem učiva, což se mu zatím daří na jedničku. Spoustu vzorců a výpočtů dokáže vysvětlit do detailu tak, aby mi bylo vše zcela jasné.", 
         stars: 5, 
         emoji: "👨‍💻" 
     }

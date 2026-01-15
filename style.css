@@ -137,8 +137,10 @@ h2 {
 /* --- Cards --- */
 .testimonials {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    /* auto-fill zajistí, že se jich vedle sebe naskládá tolik, kolik se vejde */
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 25px;
+    align-items: stretch; /* Důležité: natáhne všechny karty v řádku na stejnou výšku */
 }
 
 .card {
@@ -147,12 +149,29 @@ h2 {
     border-radius: 25px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.03);
     transition: 0.3s;
+
+    /* Flexbox nastavení pro vnitřek karty */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Tohle vytvoří "space between" mezi textem a spodkem */
 }
 
 .card:hover { 
     transform: translateY(-10px); 
 }
 
+/* Styl pro samotný text recenze */
+.card p {
+    flex-grow: 1; /* Tato řádka "vytlačí" zbytek obsahu (jméno a emoji) dolů */
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Styl pro kontejner se jménem (v JS je to ten div pod <p>) */
+/* Aby oddělovací čára byla vždy na stejném místě dole */
+.card div[style*="border-top"] {
+    margin-top: auto; 
+}
 /* --- Buttons & Links --- */
 .cta-button {
     background: var(--primary-color);
@@ -189,9 +208,18 @@ footer {
 
 .contact-box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Změna na 4 sloupce pro desktop, automaticky se smrsknou na mobilu */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 20px;
     margin-top: 50px;
+}
+.logo-icon {
+    width: auto;
+    margin-top: 10px;
+    height: 50px; /* Aby logo nebylo obří oproti ikonám */
+    object-fit: contain;
+    border-radius: 8px; /* Jemné zaoblení loga */
+    margin-bottom: 10px;
 }
 
 .contact-link {
@@ -224,4 +252,16 @@ footer {
     }
     .memoji-main { max-width: 300px; }
     h2 { font-size: 2.2rem; }
+}
+/* Responzivita: Na mobilech to hodíme do 2 a 2, nebo pod sebe */
+@media (max-width: 1000px) {
+    .contact-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-box {
+        grid-template-columns: 1fr;
+    }
 }
