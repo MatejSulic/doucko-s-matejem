@@ -22,7 +22,15 @@ const reviews = [
         goal: "3. ročník SŠ přijímačky", 
         text: "Za mě skvělý přístup a výborné znalosti. Matěj dokáže doučování pojmout tak, abych se rychle naučil co největší objem učiva, což se mu zatím daří na jedničku. Spoustu vzorců a výpočtů dokáže vysvětlit do detailu tak, aby mi bylo vše zcela jasné.", 
         stars: 5, 
-        emoji: "👨‍💻" 
+        emoji: "👨‍🦱" 
+    },
+    { 
+        name: "Vojtěch G.", 
+        age: 19, 
+        goal: "4. ročník SŠ, průběžné doučování", 
+        text: "Doučování je úplně v pohodě. Látku velmi rychle pochopím a jen tak ji nezapomenu. Matěj je navíc sympatický a dá se s ním i dobře pokecat.", 
+        stars: 5, 
+        emoji: "🙋🏻" 
     }
 ];
 
