@@ -31,6 +31,14 @@ const reviews = [
         text: "Doučování je úplně v pohodě. Látku velmi rychle pochopím a jen tak ji nezapomenu. Matěj je navíc sympatický a dá se s ním i dobře pokecat.", 
         stars: 5, 
         emoji: "🙋🏻" 
+    },
+    {
+        name: "Ondra D.",
+        age: 17,
+        goal: "Sexta Gymnázium, průběžné doučování",
+        text: "S doučováním jsem nadmíru spokojený. Oceňuji zejména srozumitelný způsob vysvětlování – kdykoliv narazím na nejasnosti, vždy mi je trpělivě vysvětlen přesný postup řešení. Velkým plusem je pro mě flexibilita; oceňuji možnost přizpůsobit náplň hodiny aktuálním potřebám, ať už jde o hloubkové pochopení látky, nebo rychlou přípravu na test. Komunikace a plánování termínů navíc funguje bezproblémově. Doporučuji!",
+        stars: 5,
+        emoji: "👨‍🎓"
     }
 ];
 
